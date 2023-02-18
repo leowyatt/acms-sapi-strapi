@@ -7,21 +7,27 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "dev": "yarn pm2 startOrRestart ecosystem.config.js --only strapi-dev",
+    "prod": "yarn pm2 startOrRestart ecosystem.config.js --only strapi-prod"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "pm2": "^5.2.2"
+  },
   "dependencies": {
     "@strapi/plugin-graphql": "4.6.1",
     "@strapi/plugin-i18n": "4.6.1",
     "@strapi/plugin-users-permissions": "4.6.1",
     "@strapi/strapi": "4.6.1",
-    "better-sqlite3": "8.0.1"
+    "better-sqlite3": "8.0.1",
+    "pg": "^8.9.0"
   },
   "strapi": {
     "uuid": "5c5e2dc8-d7e9-4a54-a619-c0e48885fa12"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
-    "npm": ">=6.0.0"
+    "npm": ">=8.5.5 <=10.0.0",
+    "node": ">=16.15.0 <=19.0.0",
+    "yarn": ">=1.22.15 <=3.0.0"
   }
 }
