@@ -6,11 +6,7 @@ module.exports = [
     config: {
       enabled: true,
       headers: "*",
-      origin: [
-        "http://localhost:6010",
-        "http://localhost:6030",
-        "chrome-extension://aahelpfcopefplnmnphdochceilphfeb",
-      ],
+      origin: ["*"],
       // expose: ["WWW-Authenticate", "Server-Authorization", "Content-Range"],
     },
   },

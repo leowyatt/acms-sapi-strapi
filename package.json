@@ -2,14 +2,15 @@
   "name": "acms-sapi-strapi",
   "version": "1.0.0",
   "author": "leowyatt",
-  "license": "mit",
+  "license": "MIT",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
     "dev": "yarn pm2 startOrRestart ecosystem.config.js --only strapi-dev",
-    "prod": "yarn pm2 startOrRestart ecosystem.config.js --only strapi-prod"
+    "prod": "yarn pm2 startOrRestart ecosystem.config.js --only strapi-prod",
+    "db": "yarn --cwd database"
   },
   "devDependencies": {
     "pm2": "^5.2.2"
